@@ -1,3 +1,4 @@
+package Model;
 public abstract  class user {
     private int ID;
     private String firstName;
@@ -5,6 +6,12 @@ public abstract  class user {
     private String email;
     private String phoneNumbers;
     private String password;
+
+
+    //Type: ==> 0.  Client
+    //      ==> 1. Admin
+    //      ==> 2. DeletedClientAccount
+    //      ==> 3. DeletedAdminAccount
 
     public user() {}
 
@@ -56,5 +63,5 @@ public abstract  class user {
         this.password = password;
     }
 
-    public abstract void showList();
+    public abstract void showList(database database, Scanner s);
 }

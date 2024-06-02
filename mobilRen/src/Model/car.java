@@ -1,3 +1,4 @@
+package Model;
 public class car {
     private int ID;
     private String brand;
