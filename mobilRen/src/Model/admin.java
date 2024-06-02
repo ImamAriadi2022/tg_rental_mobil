@@ -23,6 +23,7 @@ public class admin extends user{
         System.out.println("6. Menampilkan rent");
         System.out.println("7. Keluar\n");
         
+        System.out.println("Pilih admin menu:");
         int i = scanner.nextInt();
         
         operations[i].operations(database, scanner, this);

@@ -11,8 +11,8 @@ public class App {
         while (true) {
             System.out.println("1. Login sebagai Admin");
             System.out.println("2. Login sebagai Client");
-            System.out.println("3. Exit");
-
+            System.out.println("3. Exit\n");
+            System.out.println("Pilih menu: ");
             int choice = scanner.nextInt();
 
             switch (choice) {
