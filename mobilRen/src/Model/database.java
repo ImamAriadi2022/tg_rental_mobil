@@ -1,9 +1,14 @@
 package Model;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class database {
-    private String user = "user";
-    private String password = "password";
-    private String url = "jdbc:mysql://localhost/carentallsystem"
+    private String user = "root";
+    private String password = " ";
+    private String url = "jdbc:mysql://localhost/carentallsystem";
     private Statement statement;
 
     public database() {
@@ -16,7 +21,7 @@ public class database {
         }
     }
 
-    public statement getStatement() {
+    public Statement getStatement() {
         return statement;
     }
 

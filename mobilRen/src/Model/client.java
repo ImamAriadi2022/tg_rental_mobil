@@ -1,4 +1,6 @@
 package Model;
+import java.util.Scanner;
+
 public class client extends user{
 
     public client() {

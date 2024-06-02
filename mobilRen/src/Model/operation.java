@@ -1,9 +1,7 @@
 package Model;
-
-import Model.Database;
-import Model.User;
+import java.util.Scanner;
 
 public interface  operation {
     
-    public void operation(Database database, Scanner s, user user);
+    public void operation(database database, Scanner s, user user);
 }

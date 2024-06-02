@@ -1,4 +1,6 @@
 package Model;
+import java.util.Scanner;
+
 public abstract  class user {
     private int ID;
     private String firstName;
@@ -63,5 +65,5 @@ public abstract  class user {
         this.password = password;
     }
 
-    public abstract void showList(database database, Scanner s);
+    public abstract void showList(database database, Scanner scanner);
 }
