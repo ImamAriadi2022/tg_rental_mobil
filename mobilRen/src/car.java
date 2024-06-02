@@ -14,7 +14,7 @@ public class car {
         return ID;
     }
 
-    public void setID() {
+    public void setID(int ID) {
         this.ID = ID;
     }
 
@@ -22,7 +22,7 @@ public class car {
         return brand;
     }
 
-    public void setBrand() {
+    public void setBrand(String brand) {
         this.brand = brand;
     }
 
@@ -38,7 +38,7 @@ public class car {
         return color;
     }
 
-    public void setColor(){
+    public void setColor(String color){
         this.color = color;
     }
 
@@ -46,7 +46,7 @@ public class car {
         return year;
     }
 
-    public void setYear(){
+    public void setYear(int year) {
         this.year = year;
     }
 
@@ -54,7 +54,7 @@ public class car {
         return price;
     }
 
-    public void setPrice() {
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -62,7 +62,7 @@ public class car {
         return available;
     }
 
-    public void setAvailanle() {
+    public void setAvailable(boolean available) {
         this.available = available;
     }
 
