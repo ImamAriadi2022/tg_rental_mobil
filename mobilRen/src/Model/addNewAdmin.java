@@ -1,17 +1,13 @@
-package controller;
+package Model;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner; // Perbaiki import yang salah (until -> util)
 
-import Model.database;
-import Model.user;
-import Model.operation;
-
 public class addNewAdmin implements operation {
 
     @Override
-    public void operation(database database, Scanner scanner, user user) { // Hapus parameter user yang tidak digunakan
+    public void operations(database database, Scanner scanner, user user) { // Hapus parameter user yang tidak digunakan
         System.out.println("Masukan nama pertama: ");
         String firstName = scanner.next(); // Gunakan 'scanner' yang benar
         System.out.println("Masukan nama terakhir: ");
@@ -46,7 +42,6 @@ public class addNewAdmin implements operation {
             database.getStatement().executeUpdate(insert);
             System.out.println("Admin akun berhasil dibuat\n");
         } catch (SQLException e) {
-            // TODO: Tangani exception dengan lebih baik, jangan hanya print stack trace
             e.printStackTrace(); 
         }
     }

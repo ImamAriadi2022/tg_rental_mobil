@@ -1,7 +1,5 @@
 package Model;
 
-import controller.addNewAdmin;
-import Model.operation;
 import java.util.Scanner;
 
 public class admin extends user{
@@ -27,6 +25,6 @@ public class admin extends user{
         
         int i = scanner.nextInt();
         
-        operations[i].operation(database, scanner, this);
+        operations[i].operations(database, scanner, this);
     }
 }
