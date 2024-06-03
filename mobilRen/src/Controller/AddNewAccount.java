@@ -42,7 +42,7 @@ public class AddNewAccount implements Operation {
 		try {
 			
 			ArrayList<String> emails = new ArrayList<>();
-			ResultSet rs0 = database.getStatement().executeQuery("SELECT `Email` FROM `users`;");
+			ResultSet rs0 = database.getStatement().executeQuery("SELECT `Email` FROM `user`;");
 			while (rs0.next()) {
 				emails.add(rs0.getString("Email"));
 			}
@@ -56,7 +56,7 @@ public class AddNewAccount implements Operation {
 			rs.next();
 			int ID = rs.getInt("COUNT(*)");
 			
-			String insert = "INSERT INTO `users`(`ID`, `FirstName`, `LastName`,"
+			String insert = "INSERT INTO `user`(`ID`, `FirstName`, `LastName`,"
 					+ " `Email`, `PhoneNumber`, `Password`, `Type`) VALUES"
 					+ " ('"+ID+"','"+firstName+"','"+lastName+"','"+email+"',"
 							+ "'"+phoneNumber+"','"+password+"','"+accType+"');";
